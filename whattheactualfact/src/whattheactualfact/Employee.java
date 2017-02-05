@@ -13,22 +13,22 @@ public class Employee
 	public LocalDate joiningDate=LocalDate.of(2000,Month.JANUARY,1);
 	public int age=0;
 	public int yearsInCompany=0;
-	public CompanyPositions position=CompanyPositions.NULL;
-	public CompanyDepartments department=CompanyDepartments.NULL;
+	public CompanyPositions position=null;
+	public CompanyDepartments department=null;
 	
 	protected enum CompanyPositions
 	{
-		INTERN,ENTRY_LEVEL,MANAGER,NULL
+		INTERN,ENTRY_LEVEL,MANAGER
 	}
 	
 	protected enum CompanyDepartments
 	{
-		HR,RND,MANUFACTURING,SALES,NULL
+		HR,RND,MANUFACTURING,SALES
 	}
 	
 	public Employee()
 	{
-		;
+		
 	}
 	
 	public Employee(String _firstname, String _lastname, LocalDate _dateofbirth, String _uniqueid, int _contactnumber,LocalDate _joiningdate)
@@ -74,7 +74,8 @@ public class Employee
 					;
 			}
 		}
-		System.out.println("Heyya");
+		System.out.println(this.firstName);
+		
 		
 	} 
 
