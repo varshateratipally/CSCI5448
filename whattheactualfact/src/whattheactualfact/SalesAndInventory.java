@@ -25,6 +25,7 @@ public class SalesAndInventory
 	public SalesAndInventory(LaptopModels _model)
 	{
 		this.model=_model;
+		
 	}
 
 }

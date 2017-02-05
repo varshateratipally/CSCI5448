@@ -2,7 +2,6 @@
 
 package whattheactualfact;
 
-import java.util.Arrays;
 
 public class Equipment 
 {
@@ -27,10 +26,10 @@ public class Equipment
 		
 	}
 	
-	public Equipment(WorkingStatuses _status, int _unitsPending, int _unitsCompleted, int _unitsCurrentlyInLineStart,int _stock_e,int _stock_d,int _stock_c,int _stock_b)
+	public Equipment(WorkingStatuses _status, int[] _stock,int _unitsPending, int _unitsCompleted, int _unitsCurrentlyInLineStart,int _stock_e,int _stock_d,int _stock_c,int _stock_b)
 	{
 		this.status=_status;
-		Arrays.fill(this.stock, 0);
+		this.stock= _stock;
 		this.unitsPending=_unitsPending;
 		this.unitsCompleted=_unitsCompleted;
 		this.unitsCurrentlyInLineEnd=_unitsCurrentlyInLineStart;
